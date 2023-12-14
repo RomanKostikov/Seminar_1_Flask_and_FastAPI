@@ -1,0 +1,14 @@
+<html>
+<head>
+    <title>Новости</title>
+</head>
+<body>
+    {% for item in news %}
+    <div class="news-block">
+        <h2>{{ item.title }}</h2>
+        <p>{{ item.description }}</p>
+        <p>{{ item.date }}</p>
+    </div>
+    {% endfor %}
+</body>
+</html>

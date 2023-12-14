@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Магазин одежды</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    {% block navbar %}
+    <nav>
+        <ul>
+            <li><a href="/">HOME</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                 aria-expanded="false">Одежда<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="/jacket">Куртки</a></li>
+                <li><a href="/jeans">Джинсы</a></li>
+              </ul>
+            </li>
+            <li> <a href="/shoes">Обувь</a></li>
+        </ul>
+    </nav>
+    {% endblock %}
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Магазин одежды. Все права защищены.</p>
+    </footer>
+</body>
+</html>
